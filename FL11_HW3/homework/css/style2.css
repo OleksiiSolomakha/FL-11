@@ -29,9 +29,8 @@ header {
         align-items: center;
         font-size: 24px;
         font-weight: bold;
-        font-family: 'Hind', sans-serif;
+        font-family: "Hind";
         line-height: 23px;
-        letter-spacing: -4px;
         padding-left: 15px; }
         header .header-wrap .landing-logo p span {
           font-size: 12px;
@@ -41,17 +40,18 @@ header {
       position: relative;
       font-size: 70px;
       font-weight: bold;
+      font-family: "Source Sans Pro";
       max-width: 600px;
-      margin: 43px 0 35px 0;
+      margin: 43px 0 30px 0;
       line-height: 72px;
       letter-spacing: 1px;
       z-index: 1; }
     header .header-wrap .header_text {
       margin: 0;
       max-width: 700px;
-      word-spacing: 2px;
+      word-spacing: 1px;
       white-space: pre-line;
-      font-family: 'Source Sans Pro';
+      font-family: "Hind";
       font-size: 16px;
       line-height: 23px; }
       header .header-wrap .header_text::before {
@@ -61,7 +61,7 @@ header {
         background: #FF4E33;
         width: 300px;
         height: 28px;
-        bottom: 65px;
+        bottom: 60px;
         z-index: 0; }
     header .header-wrap button {
       width: 145px;
@@ -71,7 +71,7 @@ header {
       border: none;
       border-radius: 5px;
       font-size: 18px;
-      font-family: 'Hind', sans-serif;
+      font-family: "Hind";
       margin: 60px 0; }
 
 main, footer {
@@ -82,9 +82,9 @@ main, footer {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    letter-spacing: 0;
+    font-family: "Source Sans Pro";
     z-index: 2;
-    padding: 0 0 0 200px; }
+    padding: 0 0 0 190px; }
     main .section_text::after, footer .section_text::after {
       content: '';
       display: inline-block;
@@ -108,14 +108,14 @@ main, footer {
       flex-direction: column;
       align-items: center;
       justify-items: center;
-      width: 360px;
+      width: 358px;
       height: 415px;
       background-color: #3B3F50;
       border-radius: 5px;
       padding: 20px;
-      font-family: 'Source Sans Pro', sans-serif; }
+      font-family: "Source Sans Pro"; }
       main .section_card_wrap .section_card:last-child .section_card_text, footer .section_card_wrap .section_card:last-child .section_card_text {
-        padding-bottom: 20px; }
+        padding: 0 0 22px 0; }
       main .section_card_wrap .section_card img, footer .section_card_wrap .section_card img {
         width: 100%;
         height: 100%;
@@ -125,7 +125,8 @@ main, footer {
         font-size: 23px;
         font-weight: bold;
         color: #ffffff;
-        margin: 15px;
+        top: 4px;
+        margin: 10px;
         z-index: 1; }
       main .section_card_wrap .section_card .section_card_underline:nth-child(1), footer .section_card_wrap .section_card .section_card_underline:nth-child(1) {
         background: #FF4E33;
@@ -138,6 +139,7 @@ main, footer {
       main .section_card_wrap .section_card .section_card_text, footer .section_card_wrap .section_card .section_card_text {
         text-align: center;
         color: #8D8D9C;
+        font-family: "Hind";
         line-height: 25px;
         margin: 0; }
   main .section_banner, footer .section_banner {
@@ -155,34 +157,33 @@ main, footer {
     background: linear-gradient(45deg, #E1A901, #942F51);
     border-radius: 10px; }
     main .section_banner .section_banner_text_wrap, footer .section_banner .section_banner_text_wrap {
-      font-family: 'Hind', sans-serif;
+      font-family: "Hind";
       position: relative;
       z-index: 1; }
       main .section_banner .section_banner_text_wrap .section_banner_heading, footer .section_banner .section_banner_text_wrap .section_banner_heading {
         font-size: 30px;
         font-weight: bold;
-        margin: 0;
-        padding: 15px 0 0 0; }
+        margin: 0; }
         main .section_banner .section_banner_text_wrap .section_banner_heading::before, footer .section_banner .section_banner_text_wrap .section_banner_heading::before {
           content: '';
           position: absolute;
           background: #FF4E33;
-          width: 60px;
+          width: 62px;
           height: 13px;
-          bottom: 67px;
-          left: 127px;
+          bottom: 64px;
+          left: 125px;
           z-index: -1; }
       main .section_banner .section_banner_text_wrap .section_banner_text, footer .section_banner .section_banner_text_wrap .section_banner_text {
         font-size: 16px;
-        color: #ffffff;
-        margin: 0 0 30px 0; }
+        font-family: "Source Sans Pro";
+        color: #ffffff; }
     main .section_banner button, footer .section_banner button {
       width: 145px;
       height: 50px;
       color: #ffffff;
       background-color: #E3AC00;
       border: none;
-      font-family: 'Hind', sans-serif;
+      font-family: "Hind";
       border-radius: 5px;
       font-size: 18px; }
 
@@ -209,9 +210,8 @@ footer {
         align-items: center;
         font-size: 24px;
         font-weight: bold;
-        font-family: 'Hind', sans-serif;
+        font-family: "Hind";
         line-height: 23px;
-        letter-spacing: -4px;
         padding-left: 15px;
         margin: 0; }
         footer .footer-wrap .landing-logo p span {
@@ -221,8 +221,10 @@ footer {
           margin: 0; }
     footer .footer-wrap .footer_text {
       max-width: 300px;
-      font-size: 14px;
+      font-size: 15px;
+      font-family: "Source Sans Pro";
+      letter-spacing: 0;
       line-height: 20px; }
     footer .footer-wrap .footer-cr {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 20px; }
