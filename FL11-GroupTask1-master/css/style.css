@@ -40,7 +40,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
 }
-.load_ball {
+.loading_ball {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -58,7 +58,7 @@ h1 {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        transform: translateY(-20px);
+        transform: translateY(-15px);
     }
     80% {
         width: 10px;
@@ -72,7 +72,10 @@ h1 {
         border-bottom-left-radius: 20%;
         border-bottom-right-radius: 20%;
         transform: translateY(10px);
-    }
+    }    
+}
+.loading_text {
+    font-size: 15px;
 }
 
 .loader-2 {
