@@ -2,3 +2,4 @@
 
 task/
 examples/
+*.json
