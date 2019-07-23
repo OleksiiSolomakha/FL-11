@@ -1,0 +1,54 @@
+body {
+    margin: 0 auto;
+    max-width: 720px;
+    color: #4BBBFE;
+} 
+h1, h3 {
+    text-align: center;
+} 
+.input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #00000010;
+    border-radius: 3px;
+}
+.addBtn {
+    margin: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #C8D0D8;
+    border: none;
+    border-radius: 3px;
+}
+i:hover {
+    border: none;
+    color: #FF0000;
+}
+hr {
+    border: 2px solid rgba(75, 188, 254, 0.164);
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+button {
+    border: none;
+    background-color: #FFFFFF;
+    color: #4BBBFE;
+}
+.maximum {
+    display: none;
+}
+.list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.checkbox {
+    background-color: #FFFFFF;
+    color: #4BBBFE;
+} 
