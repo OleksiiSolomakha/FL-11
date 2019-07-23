@@ -19,9 +19,14 @@ form.addEventListener('submit', e => {
   }
 })
 
+mainInput.addEventListener('focus', function () {
+  addBtn.removeAttribute('disabled', '');
+  addBtn.style.backgroundColor = '#4BBBFE';
+})
+
 // Create action
 let addAction = (action) => {
-  let html = `
+  let input = `
     <li class="list-item">
     <span class="list-wrap">
       <input type="checkbox" />
@@ -31,7 +36,7 @@ let addAction = (action) => {
     <i class="material-icons delete">delete</i>
     </li>
   `;
-  list.innerHTML += html;
+  list.innerHTML += input;
 }
 
 // Delete action
@@ -44,18 +49,18 @@ list.addEventListener('click', e => {
 // Edit action
 li.addEventListener('click', e => {
   if (e.target.className === 'material-icons edit') {
-    let html = `
+    let input = `
       <input type="text"/>
       <i class="material-icons save">save</i>
     `;
-    e.target.parentElement.innerHTML = html;
+    e.target.parentElement.innerHTML = input;
   }
 })
 
 // Save action
 li.addEventListener('click', e => {
   if(e.target.className === 'material-icons save') {
-    let html = `
+    let input = `
     <span class='list-wrap'>
       <input type="checkbox" class="material-icons checkbox" />
         <label>${0}</label>
@@ -63,9 +68,48 @@ li.addEventListener('click', e => {
       </span>
       <i class="material-icons delete">delete</i>
     `;
-    e.target.parentElement.innerHTML = html;
+    e.target.parentElement.innerHTML = input;
   }
 })
+
+let checked = () => {
+  let check = document.querySelectorAll('.checkbox');
+  for (let i = 0; i < check.length; i++) {
+    check[i].addEventListener('change', (e) => {
+      e.preventDefault();
+      if (check[i].checked) {
+        check[i].disabled = true;
+      }
+    })
+  }
+}
+checked();
+
+//Drag & drop
+let drag;
+list.addEventListener('dragstart', function (e) {
+  drag = e.target;
+  
+});
+
+list.addEventListener('dragleave', function (e) {
+  e.target.style.transform = '';
+});
+
+list.addEventListener('dragover', function (e) {
+  if(e.target.className === 'list-item'){
+    e.target.style.transform = 'translateX(10px)';
+    e.preventDefault();
+  }
+});
+
+list.addEventListener('drop', function (e) {
+  if(e.target.className === 'list-item'){
+    e.preventDefault();
+    list.insertBefore(drag, e.target);
+    e.target.style.transform = '';
+  }
+});
 
 
 
